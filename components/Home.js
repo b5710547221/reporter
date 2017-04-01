@@ -8,7 +8,7 @@ class Home extends React.Component {
           <View style={styles.viewouter}>
             <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Report')} title="แจ้งความ"></Button>
             <View style={styles.viewinner}/>
-            <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Follow')} title="ติดตามผล"></Button>
+            <Button style={styles.button} onPress={()=>this.props.navigation.navigate('ReportStack')} title="ติดตามผล"></Button>
           </View>
           <View style={styles.logout}>
             <Button onPress={()=>this.props.navigation.navigate('Login')} title="ออกจากระบบ"></Button>
