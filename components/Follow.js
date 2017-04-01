@@ -1,36 +1,37 @@
-import React from 'react';
-import { StyleSheet, Text, View ,Picker} from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View, Picker } from "react-native";
 const Item = Picker.Item;
 class Follow extends React.Component {
-  static title = '<Picker>';
-  static description = 'Provides multiple options to choose from, using either a dropdown menu or a dialog.';
-
   state = {
-    selected1: 'key1',
-    selected2: 'key1',
-    selected3: 'key1',
-    color: 'red',
-    mode: Picker.MODE_DIALOG,
+    selected1: "key1",
+    selected2: "key1",
+    selected3: "key1",
+    color: "red",
+    mode: Picker.MODE_DIALOG
   };
- render() {
+  render() {
     return (
-          <Picker style={styles.picker} selectedValue={this.state.selected1} onValueChange={this.onValueChange}>
-            <Item label="hello" value="key0" />
-            <Item label="world" value="key1" />
-          </Picker>
+      <Picker
+        style={styles.picker}
+        selectedValue={this.state.selected1}
+        onValueChange={this.onValueChange}
+      >
+        <Item label="hello" value="key0" />
+        <Item label="world" value="key1" />
+      </Picker>
     );
   }
-  onValueChange = (value) => {
+  onValueChange = value => {
     const newState = {};
-    newState['selected1'] = value;
+    newState["selected1"] = value;
     this.setState(newState);
   };
 }
 
 var styles = StyleSheet.create({
   picker: {
-    width: 100,
-  },
+    width: 100
+  }
 });
 
 module.exports = Follow;
