@@ -21,6 +21,8 @@
   "dependencies": {
     "expo": "^15.1.0",
     "react": "~15.4.0",
-    "react-native": "0.42.3"
+    "react-native": "0.42.3",
+    "react-native-message-bar": "^1.6.0",
+    "react-native-progress": "file:components\\react-native-progress"
   }
 }
