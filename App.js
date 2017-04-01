@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, Button } from 'react-native';
 
 import {
   StackNavigator,
@@ -12,11 +12,14 @@ import Login from './components/Login';
 import ReportDetail_first from './components/ReportDetail_first';
 import ReportDetail_more from './components/ReportDetail_more';
 import ReportStack from './components/ReportStack'
+import Register from './components/Register';
 
 
 
 const App = StackNavigator({
   Main: {screen: Login},
+  Login: {screen: Login},
+  Register: {screen: Register},
   Report: {screen: Report},
   Follow: {screen: Follow},
   Home:{screen: Home},

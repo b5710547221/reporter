@@ -19,7 +19,7 @@ class Login extends React.Component {
         </View>
         <View style={{flex:3,justifyContent:'space-around',alignItems:'center'}}>
           <Button onPress={()=>this.props.navigation.navigate('Home')} title='เข้าสู่ระบบ'/>
-          <Button title='ลงทะเบียน'/>
+          <Button onPress={()=>this.props.navigation.navigate('Register')} title='ลงทะเบียน'/>
         </View>
         <View style={{flex:2}}></View>
       </View>

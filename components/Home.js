@@ -11,8 +11,8 @@ class Home extends React.Component {
             <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Follow')} title="ติดตามผล"></Button>
           </View>
           <View style={styles.logout}>
-            <Button title="ออกจากระบบ"></Button>
-          </View>  
+            <Button onPress={()=>this.props.navigation.navigate('Login')} title="ออกจากระบบ"></Button>
+          </View>
       </View>
     );
   }
