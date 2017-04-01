@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { CameraRoll,Image,StyleSheet, Text, View } from 'react-native';
+import CameraRollPicker from 'react-native-camera-roll-picker';
 
 class Report extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Test</Text>
+        <CameraRollPicker callback={this.getSelectedImages} />
       </View>
     );
   }
