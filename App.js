@@ -1,13 +1,26 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, Button } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <View style={{flex:2}}></View>
+        <View style={{flex:3}}>
+          <View style={{flex:1,flexDirection:'row',alignItems:'center'}}>
+            <View style={{flex:3,alignItems:'center'}}><Text>ชื่อผู้ใช้</Text></View>
+            <View style={{flex:7,alignItems:'center'}}><TextInput style={{width:200}}/></View>
+          </View>
+          <View style={{flex:1,flexDirection:'row',alignItems:'center'}}>
+            <View style={{flex:3,alignItems:'center'}}><Text>รหัสผ่าน</Text></View>
+            <View style={{flex:7,alignItems:'center'}}><TextInput style={{width:200}}/></View>
+          </View>
+        </View>
+        <View style={{flex:3,justifyContent:'space-around',alignItems:'center'}}>
+          <Button title='เข้าสู่ระบบ'/>
+          <Button title='ลงทะเบียน'/>
+        </View>
+        <View style={{flex:2}}></View>
       </View>
     );
   }
@@ -17,7 +30,41 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+import React from 'react';
+import { StyleSheet, Text, View, Image, TextInput, Button } from 'react-native';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={{flex:2}}></View>
+        <View style={{flex:3}}>
+          <View style={{flex:1,flexDirection:'row',alignItems:'center'}}>
+            <View style={{flex:3,alignItems:'center'}}><Text>ชื่อผู้ใช้</Text></View>
+            <View style={{flex:7,alignItems:'center'}}><TextInput style={{width:200}}/></View>
+          </View>
+          <View style={{flex:1,flexDirection:'row',alignItems:'center'}}>
+            <View style={{flex:3,alignItems:'center'}}><Text>รหัสผ่าน</Text></View>
+            <View style={{flex:7,alignItems:'center'}}><TextInput style={{width:200}}/></View>
+          </View>
+        </View>
+        <View style={{flex:3,justifyContent:'space-around',alignItems:'center'}}>
+          <Button title='เข้าสู่ระบบ'/>
+          <Button title='ลงทะเบียน'/>
+        </View>
+        <View style={{flex:2}}></View>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
     justifyContent: 'center',
   },
 });
