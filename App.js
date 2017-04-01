@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     justifyContent: 'center',
-  },
+  }
+});
 
 import {
   StackNavigator,
@@ -16,14 +17,17 @@ import Home from './components/Home';
 import Report from './components/Report';
 import Follow from './components/Follow';
 import Login from './components/Login';
+import Register from './components/Register';
 
 
 
 const App = StackNavigator({
   Main: {screen: Login},
+  Login: {screen: Login},
+  Register: {screen: Register},
   Report: {screen: Report},
   Follow: {screen: Follow},
-  Home:{screen: Home}
+  Home:{screen: Home},
 });
 
 export default App
