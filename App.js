@@ -1,6 +1,6 @@
+
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, Button } from 'react-native';
-
 import {
   StackNavigator,
 } from 'react-navigation';
@@ -13,8 +13,7 @@ import ReportDetail_first from './components/ReportDetail_first';
 import ReportDetail_more from './components/ReportDetail_more';
 import ReportStack from './components/ReportStack'
 import Register from './components/Register';
-
-
+import CameraLib from "./components/CameraLib";
 
 const App = StackNavigator({
   Main: {screen: Login},
@@ -25,7 +24,8 @@ const App = StackNavigator({
   Home:{screen: Home},
   ReportStack: {screen: ReportStack},
   ReportDetail_more: {screen: ReportDetail_more},
-  ReportDetail_first: {screen: ReportDetail_first}
+  ReportDetail_first: {screen: ReportDetail_first},
+  CameraLib: { screen: CameraLib }
 });
 
-export default App
+export default App;
