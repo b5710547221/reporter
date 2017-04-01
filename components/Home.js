@@ -6,7 +6,14 @@ class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button onPress={()=>this.props.navigation.navigate('Login')}>Login</Button>
+          <View style={styles.viewouter}>
+            <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Report')}>แจ้งความ</Button>
+            <View style={styles.viewinner}/>
+            <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Follow')}>ติดตามผล</Button>
+          </View>
+          <View style={styles.logout}>
+            <Button>ออกจากระบบ</Button>
+          </View>  
       </View>
     );
   }
@@ -19,6 +26,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  botton:{
+      width:100,
+      height:100,
+      backgroundColor:'#5bc0de',
+      color:'white'
+  },
+  viewinner:{
+      width:80
+  },
+  logout:{
+      width:120
+  },
+  viewouter:{
+      flexDirection:'row'
+  }
 });
 
 module.exports = Home;

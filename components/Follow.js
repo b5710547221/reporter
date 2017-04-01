@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
-class Login extends React.Component {
+class Follow extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-module.exports = Login;
+module.exports = Follow;

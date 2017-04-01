@@ -6,13 +6,15 @@ import {
 } from 'react-navigation';
 
 import Home from './components/Home';
-import Login from './components/Login';
+import Report from './components/Report';
+import Follow from './components/Follow';
 
 
 
 const App = StackNavigator({
   Main: {screen: Home},
-  Login: {screen: Login},
+  Report: {screen: Report},
+  Follow: {screen: Follow}
 });
 
 export default App
