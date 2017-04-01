@@ -1,18 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Button from "react-native-button";
+import { StyleSheet, Text, View ,Button} from 'react-native';
 
 class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
           <View style={styles.viewouter}>
-            <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Report')}>แจ้งความ</Button>
+            <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Report')} title="แจ้งความ"></Button>
             <View style={styles.viewinner}/>
-            <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Follow')}>ติดตามผล</Button>
+            <Button style={styles.button} onPress={()=>this.props.navigation.navigate('Follow')} title="ติดตามผล"></Button>
           </View>
           <View style={styles.logout}>
-            <Button>ออกจากระบบ</Button>
+            <Button title="ออกจากระบบ"></Button>
           </View>  
       </View>
     );
@@ -27,19 +26,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   botton:{
-      width:100,
-      height:100,
+      width:200,
+      height:50,
       backgroundColor:'#5bc0de',
       color:'white'
   },
   viewinner:{
-      width:80
+      width:50
   },
   logout:{
       width:120
   },
   viewouter:{
-      flexDirection:'row'
+      flexDirection:'row',
+      height:70,
+      marginBottom:10
   }
 });
 
