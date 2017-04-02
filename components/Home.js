@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   viewouter: {
     flexDirection: "row",
     height: 70,
-    marginBottom: 10
+    marginBottom: 100
   }
 });
 
