@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, Button } from 'react-native';
 import {
@@ -9,10 +8,10 @@ import Home from './components/Home';
 import Report from './components/Report';
 import Follow from './components/Follow';
 import Login from './components/Login';
+import Register from './components/Register';
 import ReportDetail_first from './components/ReportDetail_first';
 import ReportDetail_more from './components/ReportDetail_more';
 import ReportStack from './components/ReportStack'
-import Register from './components/Register';
 import CameraLib from "./components/CameraLib";
 
 const App = StackNavigator({
