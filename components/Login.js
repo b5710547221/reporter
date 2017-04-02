@@ -14,7 +14,7 @@ class Login extends React.Component {
           </View>
           <View style={{flex:1,flexDirection:'row',alignItems:'center'}}>
             <View style={{flex:3,alignItems:'center'}}><Text>รหัสผ่าน</Text></View>
-            <View style={{flex:7,alignItems:'center'}}><TextInput style={{width:200}}/></View>
+            <View style={{flex:7,alignItems:'center'}}><TextInput secureTextEntry={true} style={{width:200}}/></View>
           </View>
         </View>
         <View style={{flex:3,justifyContent:'space-around',alignItems:'center'}}>

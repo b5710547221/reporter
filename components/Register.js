@@ -21,7 +21,7 @@ class Register extends React.Component {
           </View>
           <View style={{flex:10,flexDirection:'row'}}>
             <View style={styles.textInputLabel}><Text>รหัสผ่าน</Text></View>
-            <View style={styles.textInputBox}><TextInput /></View>
+            <View style={styles.textInputBox}><TextInput secureTextEntry={true} /></View>
           </View>
           <View style={{flex:10,flexDirection:'row'}}>
             <View style={styles.textInputLabel}><Text>อีเมล์</Text></View>
