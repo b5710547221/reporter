@@ -1,14 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, Button } from 'react-native';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    justifyContent: 'center',
-  }
-});
-
 import {
   StackNavigator,
 } from 'react-navigation';
@@ -18,8 +9,10 @@ import Report from './components/Report';
 import Follow from './components/Follow';
 import Login from './components/Login';
 import Register from './components/Register';
-
-
+import ReportDetail_first from './components/ReportDetail_first';
+import ReportDetail_more from './components/ReportDetail_more';
+import ReportStack from './components/ReportStack'
+import CameraLib from "./components/CameraLib";
 
 const App = StackNavigator({
   Main: {screen: Login},
@@ -28,6 +21,10 @@ const App = StackNavigator({
   Report: {screen: Report},
   Follow: {screen: Follow},
   Home:{screen: Home},
+  ReportStack: {screen: ReportStack},
+  ReportDetail_more: {screen: ReportDetail_more},
+  ReportDetail_first: {screen: ReportDetail_first},
+  CameraLib: { screen: CameraLib }
 });
 
-export default App
+export default App;
